@@ -95,7 +95,7 @@ int start_exploring(char **ar2, int y, int x){
             
             
             
-        }else if(ar2[y][x + 1] == 'E'){// out
+        }else if(ar2[y][x + 1] == 'E'){//out
             printf("\nEscape successfully!!!!!!!\n\n");
             return 0;
 
@@ -109,7 +109,7 @@ int start_exploring(char **ar2, int y, int x){
             ba_ar[h][0] = -1;
             
             
-        }else if(ar2[y][x - 1] == '.'){// left
+        }else if(ar2[y][x - 1] == '.'){//left
 
             ar2[y][x - 1] = 'x';
             x -=1;
@@ -123,7 +123,7 @@ int start_exploring(char **ar2, int y, int x){
             printf("This maze can not reach the end!!!!\n\n");
             return 0;
 
-        }else if (ar2[y - 1][x] == '.'){// up
+        }else if (ar2[y - 1][x] == '.'){//up
 
             ar2[y - 1][x] = 'x';
             y -=1;
